@@ -1,0 +1,2090 @@
+/****************************  Deafult Start   ******************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@font-face {
+    font-family: 'Audrey';
+    src: url('../webfonts/Audrey-Normal.woff2') format('woff2'), url('../webfonts/Audrey-Normal.woff') format('woff'), url('../webfonts/Audrey-Normal.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Audrey Med';
+    src: url('../webfonts/Audrey-MediumOblique.woff2') format('woff2'), url('../webfonts/Audrey-MediumOblique.woff') format('woff'), url('../webfonts/Audrey-MediumOblique.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Audrey';
+    src: url('../webfonts/Audrey-NormalOblique.woff2') format('woff2'), url('../webfonts/Audrey-NormalOblique.woff') format('woff'), url('../webfonts/Audrey-NormalOblique.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Audrey';
+    src: url('../webfonts/Audrey-BoldOblique.woff2') format('woff2'), url('../webfonts/Audrey-BoldOblique.woff') format('woff'), url('../webfonts/Audrey-BoldOblique.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Audrey Med';
+    src: url('../webfonts/Audrey-Medium.woff2') format('woff2'), url('../webfonts/Audrey-Medium.woff') format('woff'), url('../webfonts/Audrey-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Audrey';
+    src: url('../webfonts/Audrey-Bold.woff2') format('woff2'), url('../webfonts/Audrey-Bold.woff') format('woff'), url('../webfonts/Audrey-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+.rl-site {
+    font-family: 'Poppins', sans-serif;
+    color: #1C1C1C;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.rl-site-content {
+    flex: 1 0 auto;
+}
+
+.rl-section-title {
+    font-family: 'Audrey';
+    font-weight: 600;
+}
+
+.rl-section-description {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.btn {
+    font-weight: bold;
+    padding: 10px 40px;
+    border-radius: 30px;
+}
+
+.btn-light {
+    color: #1c1c1c;
+    background-color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+
+.slick-dots {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.slick-dots button {
+    font-size: 0;
+    border: 1px solid #1C1C1C;
+    padding: 4px;
+    border-radius: 50%;
+    margin: 0 3px;
+    transition: all ease-in-out 0.3s;
+}
+
+.slick-dots .slick-active button {
+    background-color: #1c1c1c;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+    transition: all ease-in-out 0.3s;
+}
+
+a:hover {
+    color: #1c1c1c;
+}
+
+.slick-arrow {
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    transform: translateY(-50%);
+    font-size: 0;
+    width: 60px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 1px solid #1c1c1c;
+    background-image: url(../images/btn-arrow.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 10;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
+}
+
+.slick-next.slick-arrow {
+    left: unset;
+    right: -30px;
+    transform: translateY(-50%) rotate( 180deg);
+}
+
+.rl-product-slider .slick-arrow {
+    left: 10%;
+}
+
+.rl-product-slider .slick-next.slick-arrow {
+    left: unset;
+    right: 10%;
+}
+
+.form-select,
+.form-control {
+    color: #1C1C1C;
+    border: 1px solid #1C1C1C;
+    background-color: transparent;
+    padding: 8px 20px;
+    border-radius: 5px;
+}
+
+.form-control::placeholder {
+    color: #1C1C1C;
+}
+
+.rl-inputfile {
+    position: relative;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EBEAEF;
+    border-radius: 5px;
+}
+
+.rl-inputfile input#inputCity {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.rl-input-group {
+    position: relative;
+}
+
+.rl-input-group svg {
+    position: absolute;
+    top: 8px;
+    right: 15px;
+}
+
+.rl-input-group .form-control {
+    padding-right: 45px;
+}
+
+.form-control:focus {
+    color: #1c1c1c;
+    background-color: transparent;
+    border-color: #80c7cb;
+    box-shadow: none;
+}
+
+.table {
+    color: #1c1c1c;
+}
+
+.toggle.btn {
+    min-width: 160px;
+    min-height: 42px;
+}
+
+.toggle-group .btn {
+    padding: 8px 25px;
+}
+
+.rl-menu-show {
+    overflow: hidden;
+}
+
+.table-responsive th,
+.table-responsive td {
+    white-space: nowrap;
+}
+
+.select2-container {
+    display: block;
+    width: 100% !important;
+}
+
+
+/****************************  Deafult End   ******************************/
+
+
+/****************************  Header Start   ******************************/
+
+.rl-site-header {
+    background-color: #1C1C1C;
+    padding: 10px 0;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 30px;
+    color: #fff;
+}
+
+.navbar-brand:hover {
+    color: #fff;
+    opacity: 0.8;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    font-weight: 500;
+}
+
+.navbar-expand-xl .navbar-nav .nav-link {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.navbar-nav .btn {
+    border-radius: 30px;
+}
+
+.rl-menu-btn {
+    display: flex;
+    align-items: center;
+}
+
+.rl-menu-btn .btn-light {
+    color: #1C1C1C;
+    padding: 6px 20px;
+    font-weight: 700;
+}
+
+.rl-menu-btn .nav-item:last-child {
+    margin-left: 25px;
+}
+
+.form-select:focus,
+.btn-check:active+.btn-light:focus,
+.btn-check:checked+.btn-light:focus,
+.btn-light.active:focus,
+.btn-light:active:focus,
+.show>.btn-light.dropdown-toggle:focus,
+.btn-check:focus+.btn-light,
+.btn-light:focus {
+    box-shadow: none;
+}
+
+
+/****************************  Header End   ******************************/
+
+
+/****************************  Home Page Start   ******************************/
+
+.rk-landing-section {
+    background-size: cover;
+    background-position: center bottom;
+    padding: 200px 0 300px;
+}
+
+.rl-landing-section-content .rl-section-title {
+    font-size: 80px;
+    font-style: normal;
+    width: 400px;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.rl-landing-section-content .rl-section-title span {
+    color: #fff;
+}
+
+.rl-section-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rl-section-heading .rl-section-title {
+    margin-bottom: 50px;
+}
+
+.rl-section-heading .rl-section-title-link {
+    color: #1c1c1c;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.rl-our-service-section {
+    padding: 100px 0;
+    background-color: #EBEAEF;
+}
+
+.rl-section-heading .rl-section-title>span,
+.rl-section-heading .rl-section-title-link>span {
+    position: relative;
+    padding: 0 10px;
+    z-index: 1;
+}
+
+.rl-section-heading .rl-section-title>span::before,
+.rl-section-heading .rl-section-title-link>span::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: -1;
+}
+
+.rl-dark-heading .rl-section-title span::before {
+    background-color: rgba(235, 234, 239, 0.8);
+}
+
+.rl-our-service-content {
+    width: 500px;
+    max-width: 100%;
+}
+
+.rl-service-title {
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.rl-service-description {
+    margin-bottom: 45px;
+}
+
+.rl-trusted-customer-section {
+    padding: 100px 0;
+}
+
+.rl-trusted-customer-title {
+    font-size: 30px;
+}
+
+.rl-trusted-customer-number-content {
+    text-align: center;
+}
+
+.rl-trusted-customer-number-content img {
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.rl-trusted-customer-number {
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 50px;
+}
+
+.rl-trusted-customer-text {
+    font-weight: 500;
+}
+
+.rl-who-are-section,
+.rl-features-section {
+    background-color: #EBEAEF;
+    padding: 100px 0;
+}
+
+.rl-features-section .col {
+    margin-bottom: 30px;
+}
+
+.rl-features-card {
+    padding: 25px 30px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    height: 100%;
+}
+
+.rl-features-icon {
+    margin-bottom: 20px;
+}
+
+.rl-features-title {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.rl-features-description {
+    margin-bottom: 0;
+}
+
+.rl-pricing-section {
+    padding: 100px 0;
+}
+
+.rl-pricing-card {
+    background-color: #EBEAEF;
+    padding: 20px 20px 30px;
+    border-radius: 20px;
+    border: 1px solid #1c1c1c;
+    position: relative;
+    box-shadow: 0 0 10px rgb(0 0 0 / 16%);
+}
+
+.rl-pricing-card-footer .btn {
+    width: 100%;
+}
+
+.rl-pricing-icon {
+    margin-bottom: 20px;
+}
+
+.rl-pricing-title {
+    font-size: 34px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.rl-pricing-card-price {
+    position: absolute;
+    top: -15px;
+    right: 30px;
+}
+
+.rl-card-price__inner {
+    background-color: #1C1C1C;
+    color: #fff;
+    clip-path: polygon(100% 0, 100% 75%, 50% 100%, 0 75%, 0 0);
+    padding: 20px 15px 30px;
+    text-align: center;
+}
+
+.rl-pricing-card-price-title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.rl-pricing-card-price-label {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.rl-pricing-card-price:before {
+    content: "";
+    height: 15px;
+    width: 15px;
+    background-color: #1c1c1c;
+    position: absolute;
+    left: -15px;
+    top: 0;
+    z-index: 1;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+}
+
+.rl-pricing-features-list {
+    padding-left: 35px;
+    margin-bottom: 30px;
+    list-style: none;
+}
+
+.rl-pricing-features-item {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.rl-pricing-card-dark {
+    color: #ffffff;
+    background-color: #1c1c1c;
+}
+
+.rl-pricing-card-dark .rl-card-price__inner {
+    color: #1c1c1c;
+    background-color: #ffffff;
+    border: 1px solid #1c1c1c;
+}
+
+.rl-pricing-card-dark .rl-pricing-card-price:before {
+    background-color: #5D5959;
+}
+
+.rl-pricing-features-item:before {
+    content: "\f00c";
+    font-family: "Font Awesome 5 free";
+    font-weight: 900;
+    position: absolute;
+    left: -25px;
+}
+
+
+/* WelCome Modal Start */
+
+.modal-content {
+    background-image: url(../images/modal-back.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    border: 2px solid #1C1C1C;
+}
+
+.modal-header {
+    border-bottom: 1px solid #1c1c1c;
+}
+
+.rl-welcome-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.rl-welcome-item {
+    width: 220px;
+    max-width: 33.33%;
+    text-align: center;
+}
+
+.rl-welcome-item a {
+    color: #1c1c1c;
+}
+
+.rl-welcome-item label {
+    border: 2px solid #fff;
+    padding: 10px;
+    display: block;
+    position: relative;
+    margin: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.16);
+}
+
+.rl-welcome-item label:before {
+    background-color: white;
+    color: white;
+    content: " ";
+    border-radius: 0 15px;
+    border: 1px solid #1c1c1c;
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 28px;
+    transition-duration: 0.4s;
+    transform: scale(0);
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rl-welcome-item label img {
+    width: 80%;
+    transition-duration: 0.2s;
+    transform-origin: 50% 50%;
+}
+
+.rl-welcome-item:hover label {
+    border-color: #1C1C1C;
+}
+
+.rl-welcome-item:hover label:before {
+    content: "✓";
+    background-color: #1C1C1C;
+    transform: scale(1);
+}
+
+.rl-welcome-item:hover label img {
+    transform: scale(0.9);
+}
+
+.rl-welcome-title {
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.modal-title {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.btn-close {
+    color: #1c1c1c;
+    opacity: 1;
+}
+
+
+/* WelCome Modal End */
+
+
+/****************************  Home Page End   ******************************/
+
+
+/****************************  Become a Seller Page Start   ******************************/
+
+.rl-suppliers-love-section {
+    background-color: #EBEAEF;
+    padding: 100px 0;
+}
+
+.rl-suppliers-love-card {
+    text-align: center;
+}
+
+.rl-suppliers-love-icon {
+    height: 100px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rl-suppliers-love-icon img {
+    max-height: 100%;
+    width: auto;
+}
+
+.rl-suppliers-love-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.rl-testimonial-section {
+    background-color: #EBEAEF;
+    padding: 100px 0;
+}
+
+.rl-testimonial-card {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 25px 30px;
+    margin: 0 15px;
+}
+
+.rl-testimonial-card-img img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    border: 1px solid #1c1c1c;
+    box-shadow: 0 0 10px rgb(0 0 0 / 16%);
+    margin-bottom: 15px;
+}
+
+.rl-testimonial-card-footer label {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+.rl-powering-catalogue-section .row:not(:last-child) {
+    margin-bottom: 200px;
+}
+
+
+/****************************  Become a Seller Page End   ******************************/
+
+
+/****************************  customer Home Page Start   ******************************/
+
+.rl-slider-section {
+    background-color: #EBEAEF;
+    padding: 100px 0;
+}
+
+.rl-product-slider .slick-list {
+    padding-top: 100px !important;
+    padding-bottom: 30px !important;
+}
+
+.rl-product-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+    margin: 0 15px;
+    padding: 20px;
+    position: relative;
+}
+
+.rl-product-card-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.rl-product-card-title span {
+    position: relative;
+    padding: 0 10px;
+    z-index: 1;
+}
+
+.rl-product-card-title span::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-color: #EBEAEF;
+    z-index: -1;
+}
+
+.rl-product-card-footer {
+    text-align: center;
+}
+
+.rl-product-card-link {
+    color: #1c1c1c;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.rl-product-img {
+    margin-bottom: 50px;
+}
+
+.rl-product-img img {
+    width: 170px;
+    height: 170px;
+    object-fit: contain;
+    margin-top: -100px;
+}
+
+.rl-product-img {
+    margin-bottom: 20px;
+}
+
+.rl-stores-section .rl-product-img img {
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.rl-stores-section .rl-product-card-title {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.rl-product-description {
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+.rl-featured-product-section .rl-product-card-title {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.rl-featured-product-section .rl-product-card-body {
+    display: flex;
+}
+
+.rl-product-card-details {
+    width: 85%;
+}
+
+.rl-product-card-qty {
+    width: 15%;
+}
+
+.rl-product-card-qty .form-control {
+    padding: 0;
+    text-align: center;
+    border: none;
+    margin: 10px 0;
+}
+
+.rl-product-qty-btn svg {
+    width: 20px;
+    height: auto;
+}
+
+.rl-product-qty-btn {
+    display: block;
+    text-align: center;
+    cursor: pointer;
+}
+
+.rl-product-cart-link {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+
+.rl-product-cart-link svg {
+    width: 25px;
+    height: auto;
+}
+
+.rl-product-description small {
+    font-size: 80%;
+    color: #FD4040;
+    text-decoration: line-through;
+}
+
+
+/****************************  customer Home Page End   ******************************/
+
+
+/****************************  Register Page Start   ******************************/
+
+.rl-register-section {
+    padding: 75px 0;
+    background-image: url(../images/register-back.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.rl-register-content {
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgb(0 0 0 / 16%);
+    backdrop-filter: blur(20px);
+}
+
+.rl-register-content .rl-section-heading {
+    justify-content: center;
+}
+
+.rl-register-content .rl-section-heading .rl-section-title>span::before {
+    background-color: rgba(37, 172, 177, 0.5);
+}
+
+.rl-register-content .btn {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.rl-form-notes {
+    margin-bottom: 0;
+}
+
+
+/****************************  Register Page End   ******************************/
+
+
+/****************************  Dashboard Page Start   ******************************/
+
+.rl-dashboard-section {
+    background-color: #EBEAEF;
+    padding: 50px;
+    min-height: 100vh;
+}
+
+.rl-dashboard-menu {
+    padding: 20px 30px 0;
+    background-color: #1c1c1c;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.rl-dashboard-menu .nav-tabs {
+    border-bottom: none;
+}
+
+.rl-dashboard-menu .nav-link {
+    padding: 10px 35px;
+}
+
+.rl-dashboard-menu .nav-link {
+    color: #fff;
+}
+
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    color: #1c1c1c;
+    background-color: #EBEAEF;
+    border-color: #1c1c1c;
+    border-radius: 10px 10px 0 0;
+}
+
+.user-menu-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.user-menu-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.rl-user-profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    border: 1px solid #3BC0C7;
+}
+
+.rl-dashboard-content__inner {
+    background-color: #3BC0C7;
+    padding: 30px;
+    border: 1px solid #1c1c1c;
+    border-radius: 0 0 20px 20px;
+}
+
+.rl-dashboard-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    height: 100%;
+}
+
+.rl-dashboard-card-label {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.rl-dashboard-card-title {
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.rl-dashboard-card-description {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.rl-dashboard-content__inner .col {
+    margin-bottom: 30px;
+}
+
+.rl-dashboard-content__inner .col:nth-child(6) {
+    order: 6;
+}
+
+.rl-dashboard-wallet-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rl-dashboard-wallet-link a {
+    color: #1c1c1c;
+}
+
+.rl-dashboard-wallet-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(../images/wallet-cad-back.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.rl-dashboard-SellRunlokla-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../images/wallet-cad-back.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.rl-dashboard-SellRunlokla-card .rl-dashboard-wallet {
+    width: 100%;
+}
+
+.rl-dashboard-SellRunlokla-card .rl-dashboard-card-label {
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.rl-dashboard-wallet-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rl-dashboard-wallet-btn .btn {
+    padding: 8px 15px;
+    border-radius: 30px;
+    width: 100%;
+    margin: 0 5px;
+    font-size: 14px;
+}
+
+.rl-repeat-fresh-user {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.rl-repeat-fresh-user__inner:not(:last-child) {
+    margin-right: 15px;
+}
+
+.rl-repeat-fresh-user__inner .rl-dashboard-card-label {
+    font-size: 18px;
+}
+
+.rl-repeat-fresh-user__inner .rl-dashboard-card-title {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.rl-contact-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.rl-contact-item:not(:last-child) {
+    margin-right: 15px;
+}
+
+.rl-dashboard-order-card {
+    background-color: #1C1C1C;
+    padding: 20px 30px;
+    border-radius: 20px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rl-all-order {
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+
+.rl-order-table tr {
+    vertical-align: middle;
+}
+
+.rl-order-table .form-select {
+    width: auto;
+    border: none;
+    padding: 0 30px 0 10px;
+}
+
+.rl-customer-details__inner {
+    border: 1px solid #707070;
+    padding: 15px 25px;
+    border-radius: 10px;
+}
+
+.rl-customer-detail-list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    align-items: center;
+}
+
+.rl-customer-detail-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.rl-customer-detail-link {
+    color: #1c1c1c;
+}
+
+.rl-customer-detail-item span {
+    font-weight: 600;
+}
+
+.rl-customer-info-btn {
+    cursor: pointer;
+}
+
+.rl-customer-details {
+    display: none;
+}
+
+.rl-customer-details.show {
+    display: table-row;
+}
+
+.rl-filter-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.rl-filter {
+    display: flex;
+    align-items: center;
+}
+
+.rl-filter {
+    margin-top: 20px;
+}
+
+.rl-filter-content .rl-filter-btn {
+    margin-left: auto;
+    margin-top: 20px;
+}
+
+.rl-filter .form-select {
+    padding-right: 35px;
+}
+
+.rl-filter .btn {
+    border-radius: 5px;
+}
+
+.rl-filter>*:not(:last-child) {
+    margin-right: 15px;
+}
+
+.rl-dashboard-addProduct-form {
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+
+.rl-product-bulk-btn {
+    margin-bottom: 35px;
+}
+
+.rl-all-product-content {
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.rl-product-details__inner {
+    display: flex;
+}
+
+.rl-products-img {
+    width: 200px;
+}
+
+.rl-products-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.rl-product-text {
+    width: calc(100% - 200px);
+    padding-left: 30px;
+}
+
+.rl-product-details-list {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.rl-product-details-item {
+    width: 33.33%;
+}
+
+.rl-product-details-item span {
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+.rl-products-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.rl-product-details__inner {
+    display: flex;
+    padding: 10px;
+    border: 1px solid #707070;
+    border-radius: 10px;
+}
+
+.rl-products-details {
+    display: none;
+}
+
+.rl-products-details.show {
+    display: table-row;
+}
+
+.rl-products-row {
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.rl-inputfile.rl-offer-inputfile {
+    padding: 150px 10px;
+}
+
+.rl-redeemVoucher-content__inner {
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.rl-redeemVoucher-form {
+    background-color: #D7F2F3;
+    padding: 50px 30px 20px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.rl-redeemVoucher-history .nav-tabs .nav-link {
+    color: #1C1C1C;
+}
+
+.rl-redeemVoucher-history .nav-tabs {
+    border-bottom: 1px solid #1c1c1c;
+}
+
+.rl-voucher-card {
+    background-color: #D7F2F3;
+    border-radius: 10px;
+    border: 1px solid #1c1c1c;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.rl-voucher-card-body {
+    padding: 15px;
+    flex: 1 0 auto;
+}
+
+.rl-voucher-card-footer {
+    padding: 15px;
+    text-align: center;
+    border-top: 1px solid #1c1c1c;
+}
+
+.rl-voucher-card-title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.rl-voucher-card-img img {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.rl-voucher-card-description {
+    margin-bottom: 0;
+}
+
+.rl-voucher-code {
+    margin-bottom: 0;
+}
+
+.rl-voucher-code span {
+    font-weight: 600;
+}
+
+.rl-offer-voucher-card {
+    padding: 35px 15px 25px;
+    background-color: #ffffff;
+    border-radius: 15px;
+}
+
+.rl-offer-voucher-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.rl-offer-voucher-hr {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 20px;
+}
+
+.rl-offer-voucher-hr:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-bottom: 2px dashed #1C1C1C;
+    opacity: 0.5;
+    top: 50%;
+    left: 0;
+    z-index: -1;
+}
+
+.rl-offer-voucher-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rl-offer-voucher-offer__inner label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.rl-offer-voucher-offer__inner label small {
+    font-size: 75%;
+    text-decoration: line-through;
+}
+
+.rl-offer-voucher-offer-text {
+    padding: 5px 10px;
+    border: 1px dashed #1c1c1c;
+    border-radius: 7px;
+    background-color: #EBEBEF;
+    font-weight: 600;
+    min-width: 60px;
+    display: inline-block;
+    text-align: center;
+    font-size: 14px;
+}
+
+.rl-addVoucherModal .modal-content {
+    background-image: url(../images/voucher-back.png);
+}
+
+.rl-addVoucherModal .form-select,
+.rl-addVoucherModal .form-control {
+    background-color: #fff;
+}
+
+.rl-addVoucher-offer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rl-addVoucher-offer__inner:not(:last-child) {
+    margin-right: 10px;
+}
+
+.rl-addVoucher-offer__inner .form-control {
+    width: 150px;
+    max-width: 100%;
+}
+
+.rl-voucher-detail-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 20px 0;
+    list-style: none;
+}
+
+.rl-voucher-detail-item {
+    padding: 0 8px;
+}
+
+.rl-edit-profile-card .rl-voucher-card-footer {
+    padding: 0;
+}
+
+.rl-edit-profile-card .rl-inputfile {
+    border-radius: 0 0 10px 10px;
+    padding: 25px 10px;
+}
+
+.rl-dashboard-editProfile-content {
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.rl-settings-profile-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.rl-notification__inner {
+    font-size: 14px;
+    padding: 10px 20px;
+    border: 1px solid #1c1c1c;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.rl-notification-text {
+    margin-bottom: 0;
+    color: #1c1c1c;
+}
+
+.rl-notification-time span:first-child {
+    opacity: 0.5;
+    margin: 0 25px;
+}
+
+.rl-form-notes a {
+    color: rgba(37, 172, 177, 1);
+}
+
+.marquee-container {
+    height: 30px;
+    overflow: hidden;
+    line-height: 30px;
+    background-color: #1C1C1C;
+    color: #ffffff;
+}
+
+.marquee-container .marquee {
+    top: 0;
+    left: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    animation: marquee 30s linear infinite;
+}
+
+.marquee-container .marquee2 {
+    animation-delay: 15s;
+}
+
+@keyframes marquee {
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: -100%
+    }
+}
+
+.rl-dropdown-notification .rl-notification__inner {
+    border: none;
+    box-shadow: none;
+    border-bottom: 1px solid #1c1c1c;
+    border-radius: 0;
+    flex-direction: column;
+    padding: 5px 10px;
+}
+
+.user-notification-item .dropdown-menu {
+    width: 250px;
+}
+
+.rl-dropdown-notification .rl-notification__inner:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.rl-dropdown-notification .rl-notification-time span {
+    font-size: 12px;
+}
+
+.user-notification-item .rl-notification-time span:first-child {
+    margin-right: 5px;
+}
+
+.user-notification-item .rl-notification-time span:first-child,
+.user-notification-item .rl-notification-time {
+    margin-left: auto;
+}
+
+
+/****************************  Dashboard Page End   ******************************/
+
+
+/****************************  Footer Start   ******************************/
+
+.rl-site-footer {
+    background-color: #1C1C1C;
+    color: #fff;
+    padding-top: 100px;
+}
+
+.rl-site-footer-info img {
+    margin-bottom: 20px;
+}
+
+.rl-site-footer-description {
+    margin-bottom: 0;
+    width: 470px;
+    max-width: 100%;
+}
+
+.rl-footer-menu-title {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 45px;
+}
+
+.rl-footer-menu-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.rl-footer-menu-link {
+    color: #fff;
+    transition: all ease-in-out 0.3s;
+}
+
+.rl-footer-menu-link:hover {
+    color: #fff;
+    opacity: 0.8;
+}
+
+.rl-footer-menu-item {
+    margin-bottom: 10px;
+}
+
+.rl-site-copyright {
+    margin-top: 50px;
+    padding: 30px 0;
+    border-top: 1px solid #EBEAEF;
+}
+
+.rl-site-copyright-text {
+    margin-bottom: 0;
+}
+
+.rl-footer-bottom-menu-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.rl-footer-bottom-menu-item:first-child {
+    margin-right: 15px;
+}
+
+.rl-footer-bottom-menu-link {
+    color: #fff;
+}
+
+.rl-footer-bottom-menu-link:hover {
+    color: #fff;
+    opacity: 0.8;
+}
+
+
+/****************************  Footer End   ******************************/
+
+
+/****************************  Responsive Start   ******************************/
+
+@media (max-width: 1199px) {
+    .navbar-toggler {
+        order: 4;
+    }
+    .rl-menu-btn {
+        margin-left: auto;
+    }
+    .navbar-toggler {
+        position: relative;
+        z-index: 101;
+    }
+    .navbar-toggler-icons {
+        background-color: #fff;
+        width: 30px;
+        height: 3px;
+        display: block;
+        margin-bottom: 5px;
+        position: relative;
+        transition: all ease-in-out 0.3s;
+    }
+    .navbar-toggler[aria-expanded="true"] .navbar-toggler-icons:nth-child(1) {
+        transform: rotate(45deg);
+        top: 5px;
+        margin-bottom: 0;
+    }
+    .navbar-toggler[aria-expanded="true"] .navbar-toggler-icons:nth-child(2) {
+        opacity: 0;
+        margin-bottom: 0;
+    }
+    .navbar-toggler[aria-expanded="true"] .navbar-toggler-icons:nth-child(3) {
+        transform: rotate(-45deg);
+        margin-bottom: 0;
+    }
+    .navbar-toggler:focus:not(:focus-visible) {
+        box-shadow: none;
+    }
+    .navbar-collapse {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+    }
+    .navbar-nav {
+        height: 100vh;
+        background-color: #1c1c1c;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .rl-landing-section-content .rl-section-title {
+        font-size: 60px;
+    }
+    .rl-features-card {
+        padding: 25px 20px;
+    }
+    .rl-notification-time {
+        white-space: nowrap;
+    }
+    .rl-notification-time span:first-child {
+        margin: 0 15px;
+    }
+    .rl-voucher-card-img img {
+        height: 170px;
+    }
+    .rl-edit-profile-card .rl-inputfile {
+        padding: 25px 5px;
+    }
+}
+
+@media (max-width: 991px) {
+    .rl-landing-section-content .rl-section-title {
+        font-size: 50px;
+    }
+    .rl-site-content {
+        font-size: 14px;
+    }
+    .slick-dots {
+        margin-top: 30px;
+    }
+    .rk-landing-section {
+        padding: 70px 0;
+    }
+    .rl-trusted-customer-title {
+        font-size: 24px;
+        margin-bottom: 0;
+    }
+    .rl-our-service-section,
+    .rl-trusted-customer-section {
+        padding: 70px 0;
+    }
+    .rl-trusted-customer-number {
+        font-size: 40px;
+        margin-bottom: 5px;
+    }
+    .rl-pricing-section {
+        padding: 70px 0 20px;
+    }
+    .rl-who-are-section,
+    .rl-features-section {
+        padding: 70px 0;
+    }
+    .rl-pricing-content .row {
+        justify-content: center;
+    }
+    .rl-pricing-content .row .col {
+        margin-bottom: 50px;
+    }
+    .rl-pricing-features-item {
+        font-size: 14px;
+    }
+    .rl-pricing-icon img {
+        width: 60px;
+    }
+    .rl-site-footer {
+        padding-top: 70px;
+    }
+    .rl-site-footer-info img {
+        margin-bottom: 10px;
+    }
+    .rl-footer-menu-title {
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+    .rl-site-copyright {
+        margin-top: 30px;
+        padding: 20px 0;
+    }
+    .rl-welcome-item h6 {
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+    .rl-welcome-item label:before {
+        border-radius: 0 15px 0 10px;
+        width: 30px;
+        height: 30px;
+    }
+    .modal-title {
+        font-size: 20px;
+    }
+    .rl-welcome-title {
+        font-size: 20px;
+    }
+    .rl-product-card-title {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    .rl-product-img img {
+        width: 120px;
+        height: 120px;
+        margin-top: -80px;
+    }
+    .slick-arrow {
+        width: 45px;
+        height: 25px;
+        border-radius: 5px;
+    }
+    .rl-section-heading .rl-section-title {
+        margin-bottom: 20px;
+    }
+    .rl-slider-section {
+        padding: 70px 0;
+    }
+    .rl-section-title {
+        font-size: 24px;
+    }
+    .rl-section-heading .rl-section-title-link {
+        font-size: 16px;
+    }
+    .rl-product-slider .slick-arrow {
+        left: 3%;
+    }
+    .rl-product-slider .slick-next.slick-arrow {
+        left: unset;
+        right: 3%;
+    }
+    .rl-powering-catalogue-section .row:not(:last-child) {
+        margin-bottom: 140px;
+    }
+    .rl-suppliers-love-icon {
+        height: 50px;
+        margin-bottom: 15px;
+    }
+    .rl-suppliers-love-title {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .rl-testimonial-section {
+        padding: 70px 0;
+    }
+    .rl-suppliers-love-section {
+        padding: 70px 0;
+    }
+    .rl-dashboard-section {
+        padding: 20px;
+    }
+    .rl-dashboard-content__inner {
+        padding: 15px;
+    }
+    .user-menu-item svg {
+        width: 25px;
+    }
+    .user-menu-item:not(:last-child) {
+        margin-right: 5px;
+    }
+    .rl-user-profile img {
+        width: 30px;
+        height: 30px;
+    }
+    .rl-dashboard-menu .nav-link {
+        padding: 8px 20px;
+    }
+    .rl-dashboard-order-icon svg {
+        width: 70px;
+    }
+    .btn {
+        padding: 7px 25px;
+        font-size: 14px;
+    }
+    .rl-all-product-content .rl-filter-content {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .rl-filter-content .rl-filter {
+        margin-bottom: 10px;
+    }
+    .rl-product-details-item {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .rl-product-details-item span {
+        margin-right: 5px;
+    }
+    .rl-voucher-card-img img {
+        height: 170px;
+    }
+    .rl-redeemVoucher-form {
+        padding: 40px 20px 10px;
+    }
+    .rl-redeemVoucher-title.text-center {
+        font-size: 24px;
+    }
+    .rl-voucher-card-body,
+    .rl-voucher-card-footer {
+        padding: 10px 15px;
+    }
+    .rl-offer-voucher-card {
+        margin-bottom: 10px;
+    }
+    .rl-dashboard-editProfile-content {
+        padding: 20px 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .rl-menu-btn .btn-light {
+        padding: 4px 15px;
+        font-size: 14px;
+    }
+    .rl-menu-btn .nav-item:last-child {
+        margin-left: 5px;
+    }
+    .navbar .container-fluid {
+        padding: 0;
+    }
+    .btn {
+        font-weight: bold;
+        padding: 7px 25px;
+        border-radius: 30px;
+        font-size: 14px;
+    }
+    .rl-our-service-img {
+        margin-bottom: 20px;
+    }
+    .rl-our-service-section,
+    .rk-landing-section,
+    .rl-trusted-customer-section {
+        padding: 50px 0;
+    }
+    .rl-section-heading .rl-section-title {
+        margin-bottom: 30px;
+    }
+    .slick-dots {
+        margin-top: 20px;
+    }
+    .rl-trusted-customer-title {
+        font-size: 20px;
+        text-align: center;
+    }
+    .rl-trusted-customer-number-content,
+    .rl-trusted-customer-content {
+        margin-bottom: 20px;
+    }
+    .rl-who-are-section,
+    .rl-features-section {
+        padding: 50px 0;
+    }
+    .rl-who-are-content {
+        margin-bottom: 20px;
+    }
+    .rl-welcome-item label:before {
+        width: 25px;
+        height: 25px;
+    }
+    .rl-section-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .rl-section-title-link {
+        margin-left: auto;
+    }
+    .rl-site-footer {
+        padding-top: 50px;
+        font-size: 14px;
+    }
+    .rl-slider-section {
+        padding: 50px 0;
+    }
+    .rl-site-footer-info {
+        margin-bottom: 30px;
+    }
+    .rl-footer-menu-title {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    .rl-site-copyright-text {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .rl-footer-bottom-menu-list {
+        justify-content: center;
+    }
+    .rl-powering-catalogue-section .row:not(:last-child) {
+        margin-bottom: 100px;
+    }
+    .rl-powering-catalogue-section .row:nth-child(odd) {
+        flex-direction: column-reverse;
+    }
+    .rl-suppliers-love-section {
+        padding: 50px 0 0;
+    }
+    .rl-suppliers-love-card {
+        margin-bottom: 50px;
+    }
+    .slick-arrow {
+        left: 3%;
+    }
+    .slick-next.slick-arrow {
+        left: unset;
+        right: 3%;
+    }
+    .rl-dashboard-menu {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+    .user-menu-list {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .rl-dashboard-menu .nav-tabs .nav-link {
+        width: 100%;
+        text-align: center;
+    }
+    .rl-dashboard-card {
+        padding: 15px;
+    }
+    .rl-dashboard-card-label {
+        font-size: 18px;
+    }
+    .rl-dashboard-card-title {
+        font-size: 26px;
+    }
+    .rl-dashboard-wallet-btn {
+        flex-wrap: wrap;
+    }
+    .rl-dashboard-wallet-btn .btn:not(:last-child) {
+        margin-bottom: 10px;
+    }
+    .rl-dashboard-content__inner .col {
+        margin-bottom: 15px;
+    }
+    .rl-repeat-fresh-user {
+        justify-content: space-between;
+    }
+    .rl-dashboard-section {
+        padding: 15px 10px;
+    }
+    .rl-filter-content {
+        flex-wrap: wrap;
+    }
+    .rl-filter {
+        margin-bottom: 10px;
+        flex-direction: column;
+        width: 100%;
+    }
+    .rl-filter-content .btn {
+        width: 100%;
+    }
+    .rl-filter>*:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .rl-all-order {
+        padding: 20px;
+    }
+    .rl-dashboard-addProduct-form {
+        padding: 20px 15px;
+    }
+    .form-select,
+    .form-control {
+        padding: 6px 15px;
+        font-size: 14px;
+    }
+    .rl-dashboard-addProduct-form .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .rl-filter-content .btn:not(:last-child) {
+        margin-bottom: 10px;
+    }
+    .rl-all-product-content {
+        padding: 20px 15px;
+    }
+    .rl-inputfile.rl-offer-inputfile {
+        padding: 70px 10px;
+    }
+    .rl-offer-voucher-title {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    .rl-offer-voucher-hr {
+        margin-bottom: 15px;
+    }
+    .rl-offer-voucher-offer__inner {
+        text-align: center;
+    }
+    .rl-offer-voucher-offer__inner label {
+        margin-bottom: 10px;
+    }
+    .rl-redeemVoucher-content__inner {
+        padding: 15px;
+    }
+    .rl-redeemVoucher-form .btn {
+        width: 100%;
+    }
+    .rl-voucher-history-content .btn {
+        width: 100%;
+    }
+    .rl-redeemVoucher-title.text-center {
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+    .rl-notification__inner {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .rl-notification-time {
+        width: 100%;
+        text-align: right;
+        margin-top: 10px;
+    }
+    .rl-settings-profile-content {
+        background-color: #fff;
+        padding: 20px 15px;
+        border-radius: 20px;
+    }
+    .rl-settings-profile-content .col-md-3.text-end {
+        text-align: left !important;
+    }
+}
+
+
+/****************************  Responsive End   ******************************/

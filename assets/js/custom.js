@@ -39,7 +39,7 @@ $(document).ready(function() {
         slidesToShow: 5,
         dots: true,
         arrows: true,
-        // autoplay: true,
+        autoplay: true,
         centerMode: true,
         autoplaySpeed: 2000,
         slidesToScroll: 1,
@@ -67,6 +67,22 @@ $(document).ready(function() {
                 }
             }
         ]
+    });
+
+    $('.rl-product-detail-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.rl-product-detail-nav-slider'
+    });
+    $('.rl-product-detail-nav-slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.rl-product-detail-slider',
+        arrows: false,
+        dots: false,
+        focusOnSelect: true
     });
 
     // hash && $('ul.nav a[href="' + hash + '"]').tab('show');

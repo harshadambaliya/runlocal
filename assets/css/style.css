@@ -173,7 +173,7 @@ a:hover {
     border-radius: 5px;
 }
 
-.rl-inputfile input#inputCity {
+.rl-inputfile .form-control {
     position: absolute;
     top: 0;
     left: 0;
@@ -228,6 +228,11 @@ a:hover {
 .select2-container {
     display: block;
     width: 100% !important;
+}
+
+.form-check-input:checked {
+    background-color: #1c1c1c;
+    border-color: #1c1c1c;
 }
 
 
@@ -446,7 +451,7 @@ a:hover {
     border-radius: 20px;
     border: 1px solid #1c1c1c;
     position: relative;
-    box-shadow: 0 0 10px rgb(0 0 0 / 16%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
 }
 
 .rl-pricing-card-footer .btn {
@@ -830,9 +835,16 @@ a:hover {
 }
 
 .rl-product-qty-btn {
-    display: block;
+    display: flex;
     text-align: center;
     cursor: pointer;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: #EBEAEF;
+    border-radius: 8px;
+    border: 1px solid #1c1c1c;
 }
 
 .rl-product-cart-link {
@@ -1533,6 +1545,218 @@ a:hover {
 /****************************  Dashboard Page End   ******************************/
 
 
+/****************************  Vendor Home Page Start   ******************************/
+
+.rl-vendor-landing-section {
+    padding: 0;
+}
+
+.rl-vendor-product-slider .rl-product-img img {
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rl-vendor-category-slider .rl-product-card {
+    padding: 0;
+}
+
+.rl-vendor-category-slider .rl-product-card-body,
+.rl-vendor-category-slider .rl-product-card-footer {
+    padding: 0 20px;
+}
+
+.rl-vendor-category-slider .rl-product-img img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.rl-vendor-category-slider .rl-product-card-title {
+    text-align: left;
+}
+
+.rl-vendor-category-slider .rl-product-card-footer {
+    text-align: left;
+    padding: 10px 20px;
+}
+
+.rl-vendor-product-slider .rl-product-img {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #BAB1E1;
+    padding-bottom: 20px;
+}
+
+.rl-vendor-product-slider .rl-product-img {
+    padding-top: 20px;
+}
+
+.rl-vendor-product-slider .rl-product-img img {
+    object-fit: contain;
+    object-position: center;
+}
+
+.rl-vendor-product-slider .rl-product-card-footer {
+    margin-top: 10px;
+    border-top: 1px solid #BAB1E1;
+}
+
+.rl-vendor-product-slider .rl-product-card-footer .btn {
+    border-radius: 10px;
+    padding: 5px 40px;
+}
+
+
+/****************************  Vendor Home Page End   ******************************/
+
+
+/****************************  Product Details Page Start   ******************************/
+
+.rl-product-detail-slider {
+    margin-bottom: 10px;
+}
+
+.rl-product-details-slide {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.rl-product-details-slide img {
+    margin: auto;
+}
+
+.rl-product-detail-slider .rl-product-details-slide {
+    padding: 40px 20px;
+}
+
+.rl-product-detail-nav-slider .rl-product-details-slide {
+    margin: 0 5px;
+}
+
+.rl-product-detail-nav-slider .rl-product-details-slide {
+    padding: 10px;
+}
+
+.rl-product-detail-content .rl-section-title {
+    font-size: 40px;
+}
+
+.rl-product-detail-qty {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.rl-product-detail-qty label {
+    font-size: 22px;
+    margin-right: 20px;
+    font-weight: 600;
+}
+
+.rl-product-detail-qty .rl-product-card-qty {
+    display: flex;
+    align-items: center;
+}
+
+.rl-product-detail-qty .rl-product-qty-btn {
+    padding: 5px;
+    background-color: #fff;
+}
+
+.rl-product-detail-qty .form-control {
+    font-weight: 600;
+}
+
+.rl-cart-table .table {
+    vertical-align: middle;
+}
+
+.rl-cart-product-img img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 0 0 10px rgb(0 0 0 / 16%);
+}
+
+.rl-product-details-cart-qty .rl-product-card-qty {
+    width: 90px;
+    display: flex;
+    align-items: center;
+}
+
+.rl-product-details-cart-qty .rl-product-qty-btn {
+    padding: 5px;
+}
+
+.rl-cart-table {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #1c1c1c;
+    font-weight: 600;
+}
+
+.rl-cart-table .table>:not(caption)>*>* {
+    border-color: #1C1C1C;
+}
+
+
+/****************************  Product Details Page End   ******************************/
+
+
+/****************************  Checkout Page Start   ******************************/
+
+.rl-checkout-section__inner {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 30px;
+    border: 1px solid #1C1C1C;
+}
+
+.rl-checkout-billing-content .rl-section-title>span::before {
+    background-color: rgb(220 218 227 / 80%);
+}
+
+.rl-order-detail-content {
+    background-color: #EBEAEF;
+    padding: 30px;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.rl-order-detail-content .table>:not(caption)>*>* {
+    border-color: #1c1c1c;
+}
+
+.rl-order-subtitle .rl-section-title {
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+.rl-apply-coupon-codeinput {
+    margin-bottom: 40px;
+}
+
+.rl-apply-coupon-codeinput .form-check-input {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.rl-apply-coupon-codeinput .form-check-label {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+/****************************  Checkout Page End   ******************************/
+
+
 /****************************  Footer Start   ******************************/
 
 .rl-site-footer {
@@ -2083,6 +2307,27 @@ a:hover {
     }
     .rl-settings-profile-content .col-md-3.text-end {
         text-align: left !important;
+    }
+    .rl-checkout-section__inner {
+        padding: 15px;
+    }
+    .rl-product-detail-content {
+        margin-bottom: 20px;
+    }
+    .rl-order-detail-content {
+        padding: 15px;
+    }
+    .rl-apply-coupon-codeinput .form-check-label {
+        font-size: 16px;
+    }
+    .rl-apply-coupon-codeinput .form-check-input {
+        width: 18px;
+        height: 18px;
+        margin-right: 10px;
+    }
+    .rl-order-subtitle .rl-section-title {
+        margin-bottom: 20px;
+        font-size: 20px;
     }
 }
 
